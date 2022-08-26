@@ -1,10 +1,8 @@
 n=int(input())
+l=[]
 for i in range(n//3):
-    if i*(i+1)==n:
-        print("YES")
-        break
+   l.append(i*(i+1))
+if n in l:
+    print("YES")
 else:
     print("NO")
-        
-    
-
